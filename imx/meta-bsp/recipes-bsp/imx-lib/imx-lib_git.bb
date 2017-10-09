@@ -33,8 +33,8 @@ do_install () {
 
 PE = "1"
 
-SRCBRANCH = "imx_4.9.11_1.0.0_ga"
-IMXLIB_SRC ?= "git://git.freescale.com/imx/imx-lib.git;protocol=git"
+SRCBRANCH = "nxp/imx_4.9.11_1.0.0_ga"
+IMXLIB_SRC ?= "git://source.codeaurora.org/external/imx/imx-lib.git;protocol=https"
 SRC_URI = "${IMXLIB_SRC};branch=${SRCBRANCH}"
 SRCREV = "f5f14fc24581e5d6e689f42a56b5f2992f978ef4"
 

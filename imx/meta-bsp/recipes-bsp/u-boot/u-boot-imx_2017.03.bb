@@ -10,8 +10,8 @@ DEPENDS_append = "dtc-native"
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-SRCBRANCH = "imx_v2017.03_4.9.11_1.0.0_ga"
-UBOOT_SRC ?= "git://git.freescale.com/imx/uboot-imx.git;protocol=git"
+SRCBRANCH = "nxp/imx_v2017.03_4.9.11_1.0.0_ga"
+UBOOT_SRC ?= "git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 SRCREV = "a2fea67d3eb3092f19f250d53a4a27fa1a0c815f"
 

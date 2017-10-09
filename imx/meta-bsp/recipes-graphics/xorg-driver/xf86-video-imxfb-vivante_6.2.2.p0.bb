@@ -7,9 +7,9 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 require recipes-graphics/xorg-driver/xf86-video-imxfb-vivante.inc
 
-SRCBRANCH = "imx_4.9.11_1.0.0_ga"
+SRCBRANCH = "nxp/imx_4.9.11_1.0.0_ga"
 S = "${WORKDIR}/git/"
-XF86_VIDEO_IMX_VIVANTE_SRC ?= "git://git.freescale.com/imx/xf86-video-imx-vivante.git;protocol=git"
+XF86_VIDEO_IMX_VIVANTE_SRC ?= "git://source.codeaurora.org/external/imx/xf86-video-imx-vivante.git;protocol=https"
 SRC_URI = "${XF86_VIDEO_IMX_VIVANTE_SRC};branch=${SRCBRANCH}"
 SRC_URI +="file://rc.autohdmi"
 SRCREV = "07ef065dfe09f1c05a1a188c371577faa3677a17"
