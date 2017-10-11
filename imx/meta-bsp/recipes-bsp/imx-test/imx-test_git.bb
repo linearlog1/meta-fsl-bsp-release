@@ -15,7 +15,8 @@ PLATFORM_mx7ulp  = "IMX7D"
 
 PARALLEL_MAKE="-j 1"
 
-SRCBRANCH = "nxp/imx_4.9.11_1.0.0_ga"
+NXP_REPO_MIRROR ?= "nxp/"
+SRCBRANCH = "${NXP_REPO_MIRROR}imx_4.9.11_1.0.0_ga"
 IMXTEST_SRC ?= "git://source.codeaurora.org/external/imx/imx-test.git;protocol=https"
 
 SRC_URI = "${IMXTEST_SRC};branch=${SRCBRANCH}"

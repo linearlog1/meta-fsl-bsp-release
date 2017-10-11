@@ -7,7 +7,8 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 require recipes-graphics/xorg-driver/xf86-video-imxfb-vivante.inc
 
-SRCBRANCH = "nxp/imx_4.9.11_1.0.0_ga"
+NXP_REPO_MIRROR ?= "nxp/"
+SRCBRANCH = "${NXP_REPO_MIRROR}imx_4.9.11_1.0.0_ga"
 S = "${WORKDIR}/git/"
 XF86_VIDEO_IMX_VIVANTE_SRC ?= "git://source.codeaurora.org/external/imx/xf86-video-imx-vivante.git;protocol=https"
 SRC_URI = "${XF86_VIDEO_IMX_VIVANTE_SRC};branch=${SRCBRANCH}"
