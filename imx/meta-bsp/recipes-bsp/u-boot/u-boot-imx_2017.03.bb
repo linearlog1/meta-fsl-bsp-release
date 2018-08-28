@@ -11,10 +11,10 @@ LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 NXP_REPO_MIRROR ?= "nxp/"
-SRCBRANCH = "${NXP_REPO_MIRROR}imx_v2017.03_4.9.11_1.0.0_ga"
-UBOOT_SRC ?= "git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https"
+SRCBRANCH = "DMS-SE25"
+UBOOT_SRC ?= "git://172.16.9.237/home/gituser/code/nxp/Yocto_L4.9.11_1.0.0/uboot-imx.git;protocol=ssh;user=gituser"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
-SRCREV = "a2fea67d3eb3092f19f250d53a4a27fa1a0c815f"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
