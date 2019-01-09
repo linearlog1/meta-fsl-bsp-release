@@ -12,10 +12,11 @@ require recipes-kernel/linux/linux-dtb.inc
 DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "DMS-SE25"
-LOCALVERSION = "-1.0.0"
-KERNEL_SRC ?= "git://172.16.9.237/home/gituser/code/nxp/Yocto_L4.9.11_1.0.0/linux-imx.git;protocol=ssh;user=gituser"
-SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+LOCALVERSION = "-2.1.0"
 SRCREV = "${AUTOREV}"
+# KERNEL_SRC ?= "git://172.16.9.237/home/gituser/code/nxp/Yocto_L4.9.11_1.0.0/linux-imx.git;protocol=ssh;user=gituser"
+KERNEL_SRC ?= "git://github.com/linearlog1/linux-imx.git;protocol=git"
+SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
 DEFAULT_PREFERENCE = "1"
 
